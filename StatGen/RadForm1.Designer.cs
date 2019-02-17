@@ -28,23 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            StatGenLib.Person person1 = new StatGenLib.Person();
+            this.button1 = new System.Windows.Forms.Button();
+            this.radPropertyGrid1 = new Telerik.WinControls.UI.RadPropertyGrid();
             this.personControl1 = new StatGenLib.PersonControl();
+            ((System.ComponentModel.ISupportInitialize)(this.radPropertyGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(628, 76);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // radPropertyGrid1
+            // 
+            this.radPropertyGrid1.Location = new System.Drawing.Point(12, 124);
+            this.radPropertyGrid1.Name = "radPropertyGrid1";
+            this.radPropertyGrid1.SelectedObject = this.button1;
+            this.radPropertyGrid1.Size = new System.Drawing.Size(200, 300);
+            this.radPropertyGrid1.SortOrder = System.Windows.Forms.SortOrder.Ascending;
+            this.radPropertyGrid1.TabIndex = 3;
+            // 
             // personControl1
             // 
-            this.personControl1.Location = new System.Drawing.Point(14, 14);
+            this.personControl1.Location = new System.Drawing.Point(268, 57);
             this.personControl1.Margin = new System.Windows.Forms.Padding(5);
             this.personControl1.Name = "personControl1";
             this.personControl1.Padding = new System.Windows.Forms.Padding(2);
-            person1.LastName = "Иванов";
-            person1.Name = "";
-            person1.SurName = "";
-            this.personControl1.Person = person1;
-            this.personControl1.Size = new System.Drawing.Size(769, 532);
-            this.personControl1.TabIndex = 0;
+            this.personControl1.Size = new System.Drawing.Size(270, 450);
+            this.personControl1.TabIndex = 4;
             // 
             // RadForm1
             // 
@@ -52,19 +69,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 560);
             this.Controls.Add(this.personControl1);
+            this.Controls.Add(this.radPropertyGrid1);
+            this.Controls.Add(this.button1);
             this.Name = "RadForm1";
             // 
             // 
             // 
             this.RootElement.ApplyShapeToControl = true;
             this.Text = "RadForm1";
+            ((System.ComponentModel.ISupportInitialize)(this.radPropertyGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+        private System.Windows.Forms.Button button1;
+        private Telerik.WinControls.UI.RadPropertyGrid radPropertyGrid1;
         private StatGenLib.PersonControl personControl1;
     }
 }

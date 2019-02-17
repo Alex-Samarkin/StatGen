@@ -15,10 +15,16 @@ namespace StatGenLib
         public PersonControl()
         {
             InitializeComponent();
-
-            this.radPropertyGrid1.SelectedObject = Person;
+            this.radPropertyGrid1.SelectedObject = new Person();
         }
 
-        public Person Person { get; set; } = new Person();
+        public Person Person
+        {
+            get
+            {
+                this.radPropertyGrid1.Refresh();
+                return this.radPropertyGrid1.SelectedObject as Person;
+            }
+        }
     }
 }

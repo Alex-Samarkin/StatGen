@@ -56,6 +56,6 @@
 
         #endregion
 
-        private Telerik.WinControls.UI.RadPropertyGrid radPropertyGrid1;
+        public Telerik.WinControls.UI.RadPropertyGrid radPropertyGrid1;
     }
 }
