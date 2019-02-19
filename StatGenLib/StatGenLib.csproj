@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbsPlod.cs" />
+    <Compile Include="Fish.cs" />
+    <Compile Include="GlobalData.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonControl.cs">
       <SubType>UserControl</SubType>
@@ -54,6 +56,7 @@
       <DependentUpon>PersonControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandGenBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="PersonControl.resx">
